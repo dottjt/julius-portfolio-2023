@@ -1,62 +1,35 @@
-
-
-.mask {
-  position: absolute;
+.card {
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
 
-	background: red;
+  padding: 1rem;
 
-  width: 20px;
-  height: 20px;
+  width: 100%;
+  height: 100%;
   max-width: 600px;
 
-  overflow: hidden;
-
-  background-image: url('http://cdn.theatlantic.com/static/infocus/ngpc112812/s_n01_nursingm.jpg');
+  background: url(https://media4.giphy.com/media/vVzH2XY3Y0Ar6/giphy.webp?cid=790b7611d6tiyy5n0wxq29mwvnj1oa7wzvs3he3wgpbx4035&ep=v1_gifs_trending&rid=giphy.webp&ct=g) center center;
   background-size: cover;
 
-  clip-path: url(.mask);
+  transition: 0.4s ease;
+
+  border: 4px solid black;
+  box-sizing: border-box;
 }
 
-.content {
-  position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-
-  background: green;
-
-  width: 100%;
-  height: 100%;
-  max-width: 600px;
-
-}
-
-.mask-open {
-
-  width: 100%;
-  height: 100%;
-}
-
-/* .card:hover {
-  animation: 2s linear alternate circle;
-}
-
-@keyframes circle {
-  from {
-    clip-path: ellipse(130px 140px at 10% 20%);
-    height: 30px;
-    width: 30px;
-
+@media only screen and (min-width: 768px)  {
+  .card {
+    position: absolute;
   }
-  to {
-    clip-path: ellipse(1300px 1400px at 10% 20%);
+}
 
-    width: 50%;
-    height: 100%;
-  }
-} */
+
+.card-title-container {
+  background: white;
+}
+
+.card-title {
+  color: black;
+}

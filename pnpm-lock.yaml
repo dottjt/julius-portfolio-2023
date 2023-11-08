@@ -11,6 +11,9 @@ dependencies:
   astro:
     specifier: ^3.4.3
     version: 3.4.3(typescript@5.2.2)
+  particlesjs:
+    specifier: ^2.2.3
+    version: 2.2.3
   typescript:
     specifier: ^5.2.2
     version: 5.2.2
@@ -2845,6 +2848,10 @@ packages:
     resolution: {integrity: sha512-Czj1WaSVpaoj0wbhMzLmWD69anp2WH7FXMB9n1Sy8/ZFF9jolSQVMu1Ij5WIyGmcBmhk7EOndpO4mIpihVqAXw==}
     dependencies:
       entities: 4.5.0
+    dev: false
+
+  /particlesjs@2.2.3:
+    resolution: {integrity: sha512-f0rL80Agqdsrnv/uhlLewv+LMdiXHu9MYPzMv0ZLPM06nLx3zmAXMH882fxqO6Uzb91csli8WlWaYd2XPN0d/Q==}
     dev: false
 
   /path-browserify@1.0.1:

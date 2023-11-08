@@ -3,34 +3,44 @@ import './Card.css'
 
 interface Props {
 	title: string;
-	top: string;
+	cardClass: string;
 }
 
-const { title, top } = Astro.props;
+const { title, cardClass } = Astro.props;
 ---
 
-<div class="mask">
-	<div class="content">Content</div>
+<div>
+	<!-- <p class="card-title">{title}</p> -->
+	<div class=`card ${cardClass}`>
+		<div class="card-title-container">
+			<h2 class="card-title">{title}</h2>
+		</div>
+	</div>
 </div>
 
-<!-- I'm thinking maybe the mask should just be the gif, and then the text should be -->
-
 <style>
-	.mask-full {
-		width: 100%;
-		height: 100%;
-	}
+
+.card-pos-1 {
+	clip-path: inset(66% 23% 15% 59%);
+}
+
+.card-pos-2 {
+	clip-path: inset(16% 64% 45% 19%);
+}
+
+.card-pos-3 {
+	clip-path: inset(40% 25% 35% 54%);
+}
+
+.card-pos-4 {
+	clip-path: inset(79% 76% 6% 8%);
+}
+
+
+.card-pos-1:hover, .card-pos-2:hover, .card-pos-3:hover, .card-pos-4:hover, .card-pos-5:hover, .card-pos-6:hover, .card-pos-2:hover {
+  clip-path: inset(0 0 0 0);
+	z-index: 100;
+}
+
+
 </style>
-
-<script>
-	const mask = document.querySelector('.mask')
-
-	mask?.addEventListener('mouseover', function() {
-		mask.classList.add('mask-open')
-
-		mask?.addEventListener('mouseleave', function() {
-			mask.classList.remove('mask-open')
-		})
-	})
-
-</script>

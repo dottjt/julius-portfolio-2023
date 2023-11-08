@@ -1,22 +1,36 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Header from '../components/Header.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		<div class="inner-container">
+			<Header />
 			<h1 class="title">Yeah, I <span class="text-gradient">Code.</span></h1>
 
-			<Card title="hi" top="3px"/>
-
-
+			<Card title="NeverFap Deluxe" cardClass="card-pos-1" />
+			<Card title="Afterpay" cardClass="card-pos-2" />
+			<Card title="MYOB" cardClass="card-pos-3" />
+			<Card title="FMClarity" cardClass="card-pos-3" />
 		</div>
 	</main>
 </Layout>
 
-
 <style>
+	.background {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 50%;
+		height: 100%;
+		z-index: 0;
+	}
+
 	main {
 		position: relative;
 		/* max-width: calc(100% - 2rem); */
@@ -35,6 +49,13 @@ import Card from '../components/Card.astro';
 		right: 0;
 		margin: 1rem 1rem;
 	}
+
+	.inner-container-header {
+		display: flex;
+		justify-content: space-between;
+		padding: 1rem;
+	}
+
 	@media only screen and (min-width: 768px)  {
 		.inner-container {
 			margin: 2rem 2rem;
