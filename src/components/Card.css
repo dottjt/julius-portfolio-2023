@@ -1,0 +1,62 @@
+
+
+.mask {
+  position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+	background: red;
+
+  width: 20px;
+  height: 20px;
+  max-width: 600px;
+
+  overflow: hidden;
+
+  background-image: url('http://cdn.theatlantic.com/static/infocus/ngpc112812/s_n01_nursingm.jpg');
+  background-size: cover;
+
+  clip-path: url(.mask);
+}
+
+.content {
+  position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+  background: green;
+
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+
+}
+
+.mask-open {
+
+  width: 100%;
+  height: 100%;
+}
+
+/* .card:hover {
+  animation: 2s linear alternate circle;
+}
+
+@keyframes circle {
+  from {
+    clip-path: ellipse(130px 140px at 10% 20%);
+    height: 30px;
+    width: 30px;
+
+  }
+  to {
+    clip-path: ellipse(1300px 1400px at 10% 20%);
+
+    width: 50%;
+    height: 100%;
+  }
+} */
